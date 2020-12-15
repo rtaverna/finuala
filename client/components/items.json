@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Hermatite Bracelet",
+    "materials": ["hermatite"],
+    "description": "blah blah blah blah blah blah blah",
+    "price": "$20.00",
+    "img": "./IMG_0449.jpeg",
+    "inCart": false
+  },
+  {
+    "id": 2,
+    "name": "Czech Tile Bracelet",
+    "materials": ["czech tile"],
+    "description": "blah blah blah blah blah blah blah",
+    "price": "$20.00",
+    "img": "./IMG_0452.jpeg",
+    "inCart": false
+  },
+  {
+    "id": 3,
+    "name": "Czech Tile and Glass Bracelet",
+    "materials": ["czech tile", "glass"],
+    "description": "blah blah blah blah blah blah blah",
+    "price": "$20.00",
+    "img": "./IMG_0453.jpeg",
+    "inCart": false
+  },
+  {
+    "id": 4,
+    "name": "Hermatite Necklace",
+    "materials": ["hermatite"],
+    "description": "blah blah blah blah blah blah blah",
+    "price": "$20.00",
+    "img": "./IMG_0454.jpeg",
+    "inCart": false
+  }
+]

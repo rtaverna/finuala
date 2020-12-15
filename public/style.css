@@ -1,21 +1,51 @@
+.bg-light {
+  background-color: #9fc9e5 !important;
+}
+.dropdown-menu {
+  background-color: aliceblue;
+  border: none;
+}
 body {
-  font-family: sans-serif;
+  background-color: #afd2e9;
+  text-align: center;
 }
 
-a {
-  text-decoration: none;
+h1 {
+  margin-top: 5px;
+  color: rgb(97, 33, 97);
+  font-family: 'Great Vibes', cursive;
 }
 
-label {
-  display: block;
+#content {
+  display: flex;
+  flex-direction: column;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
+#content {
+  width: 30%;
+  margin: auto;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+#all-beads {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+}
+
+.card {
+  margin: 10px;
+  background-color: #5b91b4;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.btn-primary {
+  background-color: #b3c0c9;
+  border-style: none;
+}
+#cartlink {
+  color: rgb(27, 27, 27);
+  text-align: right;
 }

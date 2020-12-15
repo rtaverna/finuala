@@ -2,6 +2,7 @@
 
 const db = require('../server/db')
 const {User} = require('../server/db/models')
+const {Item} = require('../server/db/models')
 
 async function seed() {
   await db.sync({force: true})
@@ -10,6 +11,41 @@ async function seed() {
   const users = await Promise.all([
     User.create({email: 'cody@email.com', password: '123'}),
     User.create({email: 'murphy@email.com', password: '123'})
+  ])
+
+  const items = await Promise.all([
+    Item.create({
+      name: 'Hermatite Bracelet',
+      materials: ['hermatite'],
+      description: 'blah blah blah blah blah blah blah',
+      price: 20,
+      imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/1/19/WLA_hmns_Hematite.jpg'
+    }),
+    Item.create({
+      name: 'Hermatite Necklace',
+      materials: ['hermatite'],
+      description: 'blah blah blah blah blah blah blah',
+      price: 20,
+      imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/1/19/WLA_hmns_Hematite.jpg'
+    }),
+    Item.create({
+      name: 'Czech Tile Bracelet',
+      materials: ['Czech Tile'],
+      description: 'blah blah blah blah blah blah blah',
+      price: 20,
+      imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/1/19/WLA_hmns_Hematite.jpg'
+    }),
+    Item.create({
+      name: 'Czech Tile and Glass Bracelet',
+      materials: ['Czech Tile', 'Glass'],
+      description: 'blah blah blah blah blah blah bla',
+      price: 20,
+      imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/1/19/WLA_hmns_Hematite.jpg'
+    })
   ])
 
   console.log(`seeded ${users.length} users`)
