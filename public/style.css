@@ -30,12 +30,13 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 
 .card {
   margin: 10px;
+  width: 300px;
   background-color: #5b91b4;
 }
 .card:hover {
