@@ -3,7 +3,7 @@ import Home from './Home'
 // import Hermatite from '../Hermatite';
 // import Glass from '../Glass';
 // import CzechTile from '../CzechTile';
-// import Cart from '../Cart';
+import Cart from './Cart'
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -40,6 +40,9 @@ function App() {
         <Switch>
           <Route path="/all">
             <All />
+          </Route>
+          <Route path="/cart">
+            <Cart />
           </Route>
           <Route path="/home">
             <Home />
